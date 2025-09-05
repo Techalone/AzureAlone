@@ -1,1 +1,12 @@
-*.tfvars
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+
+# Terraform directory
+.terraform/
+
+# Lock file
+.terraform.lock.hcl
+
+#mon tfvars pour éviter de pousser des infos sensibles
+*.tfvars    

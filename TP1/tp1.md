@@ -112,30 +112,33 @@ alonetp@Vm2:~$ **sudo systemctl status cloud-init.service**
 
 Utilisez Terraform pour créer une VM dans Azure
 
+*.Network/networkInterfaces/vm-nic]
+azurerm_linux_virtual_machine.main: Creating...
+azurerm_linux_virtual_machine.main: Still creating... [00m10s elapsed]
+azurerm_linux_virtual_machine.main: Still creating... [00m20s elapsed]
+azurerm_linux_virtual_machine.main: Still creating... [00m30s elapsed]
+azurerm_linux_virtual_machine.main: Still creating... [00m40s elapsed]
+azurerm_linux_virtual_machine.main: Creation complete after 50s [id=/subscriptions/835f81dd-5303-44a4-addb-5743acc93b8e/resourceGroups/terraformalone/providers/Microsoft.Compute/virtualMachines/super-vm]
 
+**Apply complete! Resources: 6 added, 0 changed, 0 destroyed.**
 
+ Prouvez avec une connexion SSH sur l'IP publique que la VM est up
 
----
+*PS C:\Users\Aloné VAITANAKI> ssh-add -l
+256 SHA256:0tossQoe1d0JxW607SLZb6RtkRhYqY8rKca+JmzbpVw alon├® vaitanaki@DESKTOP-0BAR317 (ED25519)
+256 SHA256:rgfNPLWNdTLN5/s1xCczQpE9mMHrPTiq7o8NqyUjGjo alon├® vaitanaki@DESKTOP-0BAR317 (ED25519)
+PS C:\Users\Aloné VAITANAKI> ssh alonetp@20.19.254.89
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.15.0-1089-azure x86_64)*
 
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
 
+ System information as of Fri Sep  5 14:47:03 UTC 2025
 
-- *Italique*
-- **Gras**
-- ~~Barré~~
+  System load:  0.0               Processes:             110
+  Usage of /:   5.4% of 28.89GB   Users logged in:       0
+  Memory usage: 30%               IPv4 address for eth0: 10.0.1.4
+  Swap usage:   0%
 
----
-
-## 3. Listes
-
-### Liste à puces :
-- Élément 1
-- Élément 2
-  - Sous-élément
-
-### Liste numérotée :
-1. Premier
-2. Deuxième
-3. Troisième
-
----
 
