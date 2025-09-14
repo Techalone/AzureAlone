@@ -44,9 +44,8 @@ resource "azurerm_public_ip" "main" {
   allocation_method   = "Static"
   sku                 = "Standard"
 
-dns_settings {
-    domain_name_label = "chouchou"  # le sous-domaine que tu voulez utiliser
-  }
+  domain_name_label = "chouchou"  # le sous-domaine
+
 }
 resource "azurerm_linux_virtual_machine" "main" {
   name                = "super-vm"
