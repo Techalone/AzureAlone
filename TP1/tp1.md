@@ -124,9 +124,6 @@ azurerm_linux_virtual_machine.main: Creation complete after 50s [id=/subscriptio
 
  Prouvez avec une connexion SSH sur l'IP publique que la VM est up
 
-*PS C:\Users\Aloné VAITANAKI> ssh-add -l
-256 SHA256:0tossQoe1d0JxW607SLZb6RtkRhYqY8rKca+JmzbpVw alon├® vaitanaki@DESKTOP-0BAR317 (ED25519)
-256 SHA256:rgfNPLWNdTLN5/s1xCczQpE9mMHrPTiq7o8NqyUjGjo alon├® vaitanaki@DESKTOP-0BAR317 (ED25519)
 PS C:\Users\Aloné VAITANAKI> ssh alonetp@20.19.254.89
 Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.15.0-1089-azure x86_64)*
 

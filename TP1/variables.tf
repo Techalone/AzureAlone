@@ -25,3 +25,8 @@ variable "subscription_id" {
   type        = string
   description = "Azure subscription ID"
 }
+
+variable "my_public_ip" {
+  type        = string
+  description = "Mon IP publique actuelle"
+}
