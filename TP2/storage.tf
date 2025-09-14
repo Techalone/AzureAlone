@@ -14,13 +14,8 @@ resource "azurerm_storage_container" "meowcontainer" {
   container_access_type = "private"
 }
 
-data "azurerm_virtual_machine" "main" {
-  name                = azurerm_linux_virtual_machine.main.name
-  resource_group_name = azurerm_resource_group.main.name
-}
-
 resource "azurerm_role_assignment" "vm_blob_access" {
-  principal_id = data.azurerm_virtual_machine.main.identity[0].principal_id
+  principal_id         = azurerm_linux_virtual_machine.main.identity[0].principal_id
   role_definition_name = "Storage Blob Data Contributor"
   scope                = azurerm_storage_account.main.id
 
@@ -28,3 +23,4 @@ resource "azurerm_role_assignment" "vm_blob_access" {
     azurerm_linux_virtual_machine.main
   ]
 }
+

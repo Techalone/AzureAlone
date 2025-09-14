@@ -30,3 +30,13 @@ variable "my_public_ip" {
   type        = string
   description = "Mon IP publique actuelle"
 }
+
+variable "storage_account_name" {
+  description = "Nom du compte de stockage Azure"
+  type        = string
+}
+
+variable "storage_container_name" {
+  description = "Nom du conteneur Blob"
+  type        = string
+}
